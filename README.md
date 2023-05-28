@@ -1,1 +1,1 @@
-# practice-sass
+# practice-scss
