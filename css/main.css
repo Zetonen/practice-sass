@@ -1,0 +1,82 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #000000;
+}
+
+body {
+  background-color: #a75fff;
+}
+
+.icon-git {
+  background-color: #cffd80;
+  background-image: url("./image/git.svg");
+}
+
+.icon-facebook {
+  background-color: #cffd80;
+  background-image: url("./image/facebook.svg");
+}
+
+.icon-telegram {
+  background-color: #cffd80;
+  background-image: url("./image/telegram.svg");
+}
+
+.icon-instagram {
+  background-color: #cffd80;
+  background-image: url("./image/instagram.svg");
+}
+
+.section {
+  color: #27e327;
+}
+.section:hover {
+  color: #0000ff;
+}
+.section .text {
+  color: #0000ee;
+}
+.section:hover .btn {
+  color: #0000ee;
+}
+
+.box {
+  background-color: #ff0000;
+}
+
+.btn {
+  background-color: #007e13;
+}
+.btn:hover, .btn:focus {
+  color: #fbfbfb;
+}
+.box:hover .btn {
+  background-color: #cffd80;
+}
+
+.text-suc, .text-error {
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.text-error {
+  color: #ff0000;
+}
+
+.text-suc {
+  color: #007e13;
+}
+
+.logo-list {
+  color: #ffffff;
+}
+body.white .logo-list:hover, body.white .logo-list:focus {
+  color: #000000;
+}/*# sourceMappingURL=main.css.map */

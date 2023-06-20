@@ -1,0 +1,80 @@
+@import './base/normalize';
+@import './utils/variebles';
+@import './common';
+@import './components/header';
+
+body {
+  background-color: $color;
+}
+
+$icons: 'git', 'facebook', 'telegram', 'instagram'; 
+
+
+
+@mixin generateIcons($iconsList, $typeImg){
+  @each $iconName in $iconsList{
+    .icon-#{$iconName}{
+      background-color: #cffd80;
+      background-image: url('./image/#{$iconName}.#{$typeImg}');
+    }
+  }
+}
+
+@include generateIcons($icons, 'svg');
+
+.section {
+  color: #27e327;
+
+  &:hover {
+    color: #0000ff;
+  }
+
+  .text {
+    color: #0000ee;
+  }
+
+  &:hover .btn{
+    color: #0000ee;
+  }
+}
+
+
+.box {
+  background-color: #ff0000;
+}
+
+.btn {
+  background-color: #007e13;
+
+  &:hover,
+  &:focus {
+    color: #fbfbfb;
+  }
+
+  .box:hover &{
+    background-color: #cffd80;
+  }
+}
+
+%text{
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.text-error{
+    @extend %text;
+    color: #ff0000;
+}
+
+.text-suc{
+    @extend %text;
+    color: #007e13;
+}
+
+
+.logo-list{
+  color: #ffffff;
+  body.white &:hover,body.white &:focus{
+    color: #000000;
+  }
+}
